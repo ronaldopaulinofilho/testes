@@ -25,43 +25,10 @@ public class FormularioPage {
         return this.driver.findElement(By.id("user_lastname"));
     }
 
-    public WebElement getEmailTextField() {
+    public WebElement getpostalCode() {
 
-        return this.driver.findElement(By.id("user_email"));
+        return this.driver.findElement(By.id("postal-code"));
     }
 
-    public WebElement getEnderecoTextField(){
 
-        return this.driver.findElement(By.id("user_address"));
-    }
-
-    public WebElement getUniversityTextField(){
-
-        return this.driver.findElement(By.id("user_university"));
-    }
-
-    public WebElement getProfissaoTextField(){
-
-        return this.driver.findElement(By.id("user_profile"));
-    }
-
-    public WebElement getGeneroTextField(){
-
-        return this.driver.findElement(By.id("user_gender"));
-    }
-
-    public WebElement getIdadeTextField(){
-
-        return this.driver.findElement(By.id("user_age"));
-    }
-
-    public WebElement getEnviarButton(){
-
-        return this.driver.findElement(By.name("commit"));
-    }
-
-    public WebElement getMensagemTitle(){
-
-        return this.driver.findElement(By.id("notice"));
-    }
 }

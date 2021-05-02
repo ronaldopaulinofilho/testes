@@ -22,7 +22,7 @@ public class Report {
         htmlReporter.config().
                 setDocumentTitle("Relatório de Execução de Testes Automatizados");
         htmlReporter.config().
-                setReportName("Relatório de Execução do Form Batista");
+                setReportName("Relatório de Execução do Fluxo Swag");
         htmlReporter.config().
                 setTheme(Theme.STANDARD);
         htmlReporter.config().

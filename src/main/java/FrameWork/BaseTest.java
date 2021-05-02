@@ -11,7 +11,7 @@ public class BaseTest extends DriverManager {
 
     private static WebDriver driver;
 
-    private String url = "https://automacaocombatista.herokuapp.com/home/index";
+    private String url = "https://www.saucedemo.com/";
 
     public WebDriver getDriver(){
         return driver = getDriver(TypeDriver.CHROME);

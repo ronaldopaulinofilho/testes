@@ -27,18 +27,7 @@ public class FormularioTask {
 
         formularioPage.getNomeTextField().sendKeys(fakerGeneration.getFirstName());
         formularioPage.getUltimoNomeTextField().sendKeys(fakerGeneration.getLastName());
-        formularioPage.getEmailTextField().sendKeys(fakerGeneration.getEmail());
-        formularioPage.getEnderecoTextField().sendKeys(fakerGeneration.getAddress());
-        formularioPage.getUniversityTextField().sendKeys(fakerGeneration.getUniversity());
-        formularioPage.getProfissaoTextField().sendKeys(fakerGeneration.getProfession());
-        formularioPage.getGeneroTextField().sendKeys(fakerGeneration.getGenre());
-        formularioPage.getIdadeTextField().sendKeys(fakerGeneration.getAge());
-        formularioPage.getEnviarButton().click();
-        validaCriacaoUsuario();
+        formularioPage.getpostalCode().sendKeys(fakerGeneration.getZipCode());
     }
 
-    private void validaCriacaoUsuario(){
-        waits.loadElement(formularioPage.getMensagemTitle());
-        Assertions.assertEquals("Usuário Criado com sucesso", formularioPage.getMensagemTitle().getText());
-    }
 }
